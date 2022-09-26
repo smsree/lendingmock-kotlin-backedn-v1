@@ -1,0 +1,18 @@
+spring:
+  profiles:
+    active: local
+---
+server:
+  port: 8082
+---
+spring:
+  profiles: local
+  kafka:
+    producer:
+      bootstrap-servers:
+        - localhost:9092
+      key-serializer: org.apache.kafka.common.serialization.StringSerializer
+      value-serializer: org.apache.kafka.common.serialization.StringSerializer
+    admin:
+      properties:
+        bootstrap.servers: localhost:9092
