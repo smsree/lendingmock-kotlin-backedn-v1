@@ -1,0 +1,18 @@
+spring:
+  profiles:
+    active: local
+---
+server:
+  port: 8091
+---
+spring:
+  config:
+    activate:
+      on-profile:
+        - local
+  data:
+    mongodb:
+      host: localhost
+      port: 27017
+      database: local
+      auto-index-creation: true
