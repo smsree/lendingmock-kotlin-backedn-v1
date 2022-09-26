@@ -1,0 +1,6 @@
+.div{
+    background-color: azure;
+    background-image: url('../Images/Background.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
